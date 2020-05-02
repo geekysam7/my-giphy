@@ -1,0 +1,86 @@
+.searchArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1%;
+    padding: 1%;
+}
+
+.searchForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox {
+    display: block;
+    width: 96%;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: none;
+    font-family: cursive;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    color: #4568dc;
+
+}
+
+.searchButton {
+    /* width: 10px; */
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.searchImage {
+    width: 30px;
+    height: 30px;
+    /* background-color: #; */
+}
+
+.trending {
+    margin: 5% 0;
+    font-size: 1.2rem;
+    align-self: flex-end;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 40px;
+    height: 50px;
+    background-image:linear-gradient(to bottom, #c31432, #240b36);
+    overflow: hidden;
+
+}
+
+.gifWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+    .inputBox {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inputBox {
+        width: 92%;
+        /* height: 33px; */
+    }
+    .gifWrapper {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,65 @@
+*
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1 rem = 10px */
+    overflow-x: hidden;
+}
+
+::selection {
+    color: white;
+    background: #c31432;
+  }
+  
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #107ae1;
+    background-image: url('https://visme.co/blog/wp-content/uploads/2020/03/animation-software-header-wide.gif');
+    /* opacity: .5; */
+    z-index: -3;
+    background-repeat: no-repeat;
+    /* background-size: ; */
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #c31432, #240b36);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.App {
+    width: 1000px;
+    /* background-color: #121212; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    /* overflow-y: scroll; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .App {
+        width: 95vw;
+    }
+}
